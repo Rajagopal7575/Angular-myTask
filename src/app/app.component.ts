@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-task-list';
+  title = 'My Task List';
+  taskList: string[] = [];
+
+  ngOnInit(): void {
+    if(localStorage.getItem('my_tasks')){
+      this.taskList = JSON.parse(localStorage.getItem('my_tasks'))
+    }
+  }
 }

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-task-list"
+    }
+  },
+  "defaultProject": "my-task-list",
+  "cli": {
+    "analytics": false
+  }
 }
